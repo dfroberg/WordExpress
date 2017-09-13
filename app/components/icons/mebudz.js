@@ -12,7 +12,7 @@ class GithubLogo extends React.Component {
 //       <?xml version="1.0" encoding="iso-8859-1"?>
 // <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" styleName="logo" x="0px" y="0px" viewBox="0 0 496.159 496.159">
-   <path id="XMLID_27_" d="M271.4,488.2"/>
+  //  <path id="XMLID_27_" d="M271.4,488.2"/>
    <path fill="#487206" d="M248.083,0.003C111.071,0.003,0,111.063,0,248.085c0,137.001,111.07,248.07,248.083,248.07
 	c137.006,0,248.076-111.069,248.076-248.07C496.159,111.062,385.089,0.003,248.083,0.003z"/>
 <g>

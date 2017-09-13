@@ -1,14 +1,14 @@
 {
   "public": {
-    "uploads": "http://wordexpress.s3.amazonaws.com/",
-    "amazonS3": true
+    "uploads": "http://localhost:3000/~raijin/mainelybudz.us/wp-content/uploads/",
+    "amazonS3": false
   },
   "private": {
     "wp_prefix": "wp_",
     "database": {
-      "name": "wpexpress_dev",
-      "username": "root",
-      "password": "",
+      "name": "mebudz",
+      "username": "devadmin",
+      "password": "cl0sur3##1",
       "host": "127.0.0.1"
     }
   }

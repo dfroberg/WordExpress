@@ -1,0 +1,31 @@
+some notes on getting wordexpress.io code to function correctly after npm install failed
+
+  make sure to check permissions; folder in in public_html so needed to set 774/665 , so used sudo find ./ -type f -exec chmod 664 {} \; and sudo find ./ -type d -exec chmod 775 {} \;  files and directories
+
+  then babel complained so npm uninstall babel; npm install --save-dev babel-cli
+
+  then there was a problem with a version of extract-text-webpack-plugin so I used this %npm install extract-text-webpack-plugin@latest
+
+  then it asked for webpack-sources so npm install --save-dev webpack-sources
+
+  still failed, so I installed webpack itself a la  npm install --save-dev webpack@latest
+
+20171933
+
+so I've made some progress in understanding the WordExpress and it's abilites and limitations.  IT cannot inherit any styling or css from wordpress; which means things like widgets and that are not implemented as of yet; and that things like using sidebars and that will have to either wait or they need to be coded.
+
+modified several of the scss files and investigated animations
+
+TODO:
+
+  tailor various aspects of the page to be more presentable, which means designing the templates for the various pages.  hero image/thumbnails seem not to work so far (the only wp thing i've attempted to import).  work on the layouts? not sure why this guy has a index.tpl.html .  . . a lot of this stuff he's implemented has no documentation, so notes will be important here.
+
+  widen the container on the main/front page relative to the entire width
+    is this in the index.tpl.html or in the FrontPageLayout?
+
+TANGENT:
+
+  let's see what we can do with zerif for a bit
+  i've removed the branding in the footer, and refactored the page.php code in the theme to allow easier reading.  I can do better than this theme but for now lets refactor where we can, it seems to load much more quickly with the beautifying, but that's probably not right
+
+  PROTIP: that the atom beautify for php works better if you clean up the code  first then apply it
